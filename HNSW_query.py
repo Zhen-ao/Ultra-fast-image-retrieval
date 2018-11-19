@@ -40,7 +40,7 @@ print('\n启动VGG_NET用时：{}秒\n'.format(time_vgg2-time01))
 
 # from extract_cnn_vgg16_keras import VGGNet
 queryDir = args["query"]
-# queryDir = '/home/workspace/zhaozhen/project/image_retrieval/Hnsw/Show/picture/test/0.jpg'
+
 
 # queryImg = mpimg.imread(queryDir)  # 读取图片
 # plt.title("Query Image")
@@ -65,7 +65,7 @@ for i, im in enumerate(imlist):
         im=im.decode('utf-8')
         # image = mpimg.imread(im)
         img = Image.open(im)
-        img.save('/home/workspace/zhaozhen/project/image_retrieval/Hnsw/Show/picture/retrieval/1/%s.jpg' % i)
+        img.save('./1/%s.jpg' % i)
         # plt.title("search output %d" % (i + 1))
         # plt.imshow(image)
         # plt.show()
